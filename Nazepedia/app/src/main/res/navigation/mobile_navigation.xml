@@ -1,30 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--Start UP時の画面及びフラグメントを指定する-->
-<!--android:id : このnavigation全体を指すid-->
-<!--startDestination: StartUp時どのフラグメントを起動するかを決める-->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_slideshow">
-    <!-- android:name : フラグメントのクラス名を参照するところ-->
-    <!-- android:label : メニューで表示される文字を指定する-->
-    <!-- android:layout : どのレイアウトを使用するかを指す-->
+    app:startDestination="@+id/navigation_home">
+
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.myapplication.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:id="@+id/navigation_home"
+        android:name="com.example.nazepedia.ui.home.HomeFragment"
+        android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.myapplication.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.nazepedia.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.myapplication.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.nazepedia.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
 </navigation>
