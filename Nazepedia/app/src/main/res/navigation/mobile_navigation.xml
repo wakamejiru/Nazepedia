@@ -22,4 +22,10 @@
         android:name="com.example.nazepedia.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_games"
+        android:name="com.example.nazepedia.ui.game.GameFragment"
+        android:label="@string/title_Game"
+        tools:layout="@layout/fragment_game" />
 </navigation>

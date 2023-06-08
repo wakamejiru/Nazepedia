@@ -16,4 +16,10 @@
         android:icon="@drawable/ic_notifications_black_24dp"
         android:title="@string/title_notifications" />
 
+    <item
+        android:id="@+id/navigation_games"
+        android:icon="@drawable/ic_game_back_24bp"
+        android:title="@string/title_Game" />
+
+
 </menu>

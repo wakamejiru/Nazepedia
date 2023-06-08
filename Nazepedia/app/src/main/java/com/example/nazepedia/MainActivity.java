@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         //　ナビゲーションバーによって変更された時に、対応したフラグメントで表示が変更される。
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications, R.id.navigation_games)
                 .build();
 
         // ナビゲーションバーの項目をコントローラーに紐づける
