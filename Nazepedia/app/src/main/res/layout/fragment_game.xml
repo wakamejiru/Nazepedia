@@ -3,7 +3,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.game.GameFragment">
+    android:layout_height="match_parent">
+
+
+    <ImageButton
+        android:id="@+id/NazeruDice"
+        android:layout_width="180dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/nazerudice"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintEnd_toStartOf="@+id/WhiteNazeru"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fox"
+        />
+
+
+    <ImageButton
+        android:id="@+id/WhiteNazeru"
+        android:layout_width="180dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/pencase"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/NazeruDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/hiroaki"
+        />
+
+
+    <ImageButton
+        android:id="@+id/fox"
+        android:layout_width="180dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hiroaki"
+
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NazeruDice"
+        app:srcCompat="@drawable/_000fox" />
+
+    <ImageButton
+        android:id="@+id/hiroaki"
+        android:layout_width="180dp"
+        android:layout_height="130dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toEndOf="@+id/fox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WhiteNazeru"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/hyperhiroaki" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
